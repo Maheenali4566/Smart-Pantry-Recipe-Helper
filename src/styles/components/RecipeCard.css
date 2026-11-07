@@ -1,0 +1,23 @@
+.recipe-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.recipe-details {
+  padding: 12px;
+}
+
+.recipe-details h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}

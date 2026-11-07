@@ -1,0 +1,17 @@
+.auth-nav {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.auth-nav a {
+  color: #2563eb;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.auth-nav a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,148 @@
+.recipes-container {
+  padding: 0px 50px;
+  background-color: #f8f9fa;
+  min-height: 50vh;
+}
+
+/* Header Section */
+.recipes-header {
+  margin-bottom: 30px;
+}
+
+.recipes-header h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #242c39;
+  margin-bottom: 12px;
+}
+
+.recipes-subtitle {
+  font-size: 16px;
+  color: #718096;
+  margin: 0;
+}
+
+/* Recipe List */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Recipe Info */
+.recipe-info {
+  width: 100%;
+}
+
+/* Recipe Header (title + count) */
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.recipe-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+  flex: 1;
+}
+
+.matched-count {
+  font-size: 14px;
+  color: #a0aec0;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.recipe-time {
+  font-size: 14px;
+  color: #718096;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+/* Ingredients List */
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredients-list li {
+  font-size: 15px;
+  color: #4a5568;
+  margin-bottom: 6px;
+  padding-left: 12px;
+  position: relative;
+}
+
+.ingredients-list li:before {
+  content: "•";
+  color: #cbd5e0;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.ingredients-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipes-container {
+    padding: 20px;
+  }
+
+  .recipes-header h2 {
+    font-size: 28px;
+  }
+
+  .recipe-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .recipe-card {
+    padding: 20px;
+  }
+
+  .recipe-header h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipes-header h2 {
+    font-size: 24px;
+  }
+
+  .ingredients-list li {
+    font-size: 14px;
+  }
+
+  .matched-count,
+  .recipe-time {
+    font-size: 12px;
+  }
+}
